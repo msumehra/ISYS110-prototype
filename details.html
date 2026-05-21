@@ -2,31 +2,53 @@
 <html>
 
 <head>
+
     <title>Ride Details</title>
-    <link rel="stylesheet" href="style.css"
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+
 <div class="details-box">
 
+    <!-- TOP BAR -->
+
     <div class="top-bar">
+
         <a href="matches.html" class="back-link">
+
             ← Ride Details
+
         </a>
+
     </div>
+
+    <!-- CONTENT -->
+
     <div class="details-content">
+
+        <!-- DRIVER PROFILE -->
+
         <div class="driver-profile">
-            
+
             <div class="empty-profile large-profile">
                 👤
             </div>
 
             <h1>Profile1</h1>
+
             <h2>⭐ 4.8</h2>
+
             <p>23 rides</p>
+
         </div>
 
+        <!-- RIDE INFORMATION -->
+
         <div class="ride-info">
+
             <p><strong>From:</strong> Suburb Station</p>
 
             <p><strong>To:</strong> City Centre</p>
@@ -35,13 +57,17 @@
 
             <p><strong>Time:</strong> 7:30 AM</p>
 
-            <p><strong>Seats:</strong> 2 available</p>
+            <p><strong>Seats Available:</strong> 2 out of 4 seats remaining</p>
 
             <p><strong>Car:</strong> Toyota Corolla</p>
 
             <p class="notes">
+
                 No smoking • Pet Friendly
+
             </p>
+
+            <!-- BUTTON -->
 
             <button class="join-btn"
             onclick="showJoinMessage()">
@@ -50,14 +76,18 @@
 
             </button>
 
+            <!-- SUCCESS MESSAGE -->
+
             <div id="join-message">
+
                 ✅ Ride request sent successfully
+
             </div>
-        
 
         </div>
 
     </div>
+
 </div>
 
 <script>
@@ -66,8 +96,11 @@ function showJoinMessage() {
 
 document.getElementById("join-message")
 .style.display = "block";
+
 }
+
 </script>
 
 </body>
+
 </html>

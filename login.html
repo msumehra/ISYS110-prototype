@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <title>Log In</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <header>
-    <div class="logo">🚗 NeighbourLink</div>
+
+    <div class="logo">
+        🚗 NeighbourLink
+    </div>
+
 </header>
 
-<main>
+<main class="login-page">
 
-    <h1>Log In</h1>
+    <div class="login-box">
 
-    <input type="email" placeholder="Email">
-    <br><br>
+        <h1>Log In</h1>
 
-    <input type="password" placeholder="Password">
-    <br><br>
+        <input type="email"
+        placeholder="Email">
 
-    <button>Log In</button>
+        <input type="password"
+        placeholder="Password">
+
+        <button onclick="showLoginMessage()"
+        class="login-btn">
+
+            Log In
+
+        </button>
+
+        <div id="login-message">
+
+            ✅ Successfully logged in.
+
+        </div>
+
+    </div>
 
 </main>
+
+<script>
+
+function showLoginMessage() {
+
+document.getElementById("login-message")
+.style.display = "block";
+
+}
+
+</script>
 
 </body>
 </html>

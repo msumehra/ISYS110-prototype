@@ -2,139 +2,71 @@
 <html>
 
 <head>
-    <title>Ride Requests</title>
+    <title>Offer a Ride</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="requests-box">
+<div class="offer-box">
 
+    <!-- TOP BAR -->
 
-    <div class="green-top-bar">
-        <h2>Ride Requests</h2>
+    <div class="top-bar">
+        <h2>Offer a Ride</h2>
     </div>
 
+    <!-- FORM -->
 
-    <div class="request-card">
+    <div class="offer-content">
 
-        <div class="profile">
+        <label>From (Pickup Location)</label>
 
-            <div class="empty-profile">
-                👤
+        <input type="text"
+        placeholder="e.g. Suburb Station">
+
+        <label>To (Destination)</label>
+
+        <input type="text"
+        placeholder="e.g. City Centre">
+
+        <div class="row">
+
+            <div>
+
+                <label>Date</label>
+
+                <input type="date">
+
             </div>
 
             <div>
-                <h3>Profile1 ⭐ 4.5</h3>
-                <p>12 rides</p>
+
+                <label>Time</label>
+
+                <input type="time">
+
             </div>
 
         </div>
 
-        <div class="match-info">
+        <label>Available Seats</label>
 
-            <p>Route Match: <span>Yes</span></p>
+        <input type="number"
+        placeholder="Enter seats available">
 
-            <p>Time Match: <span>Yes</span></p>
+        <!-- BUTTON -->
 
-        </div>
+        <a href="requests.html"
+        class="offer-btn">
 
-        <div class="request-buttons">
+            Offer Ride
 
-            <button class="accept-btn"
-            onclick="showAccept(this)">
-                Accept
-            </button>
-
-            <button class="decline-btn"
-            onclick="showDecline(this)">
-                Decline
-            </button>
-
-            <div class="accepted-message">
-                ✅ Request Accepted
-            </div>
-
-            <div class="declined-message">
-                ❌ Request Declined
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- REQUEST 2 -->
-
-    <div class="request-card">
-
-        <div class="profile">
-
-            <div class="empty-profile">
-                👤
-            </div>
-
-            <div>
-                <h3>Profile2 ⭐ 4.7</h3>
-                <p>20 rides</p>
-            </div>
-
-        </div>
-
-        <div class="match-info">
-
-            <p>Route Match: <span>Yes</span></p>
-
-            <p>Time Match: <span>Yes</span></p>
-
-        </div>
-
-        <div class="request-buttons">
-
-            <button class="accept-btn"
-            onclick="showAccept(this)">
-                Accept
-            </button>
-
-            <button class="decline-btn"
-            onclick="showDecline(this)">
-                Decline
-            </button>
-
-            <div class="accepted-message">
-                ✅ Request Accepted
-            </div>
-
-            <div class="declined-message">
-                ❌ Request Declined
-            </div>
-
-        </div>
+        </a>
 
     </div>
 
 </div>
-
-<script>
-
-function showAccept(button) {
-
-let message =
-button.parentElement.querySelector(".accepted-message");
-
-message.style.display = "block";
-
-}
-
-function showDecline(button) {
-
-let message =
-button.parentElement.querySelector(".declined-message");
-
-message.style.display = "block";
-
-}
-
-</script>
 
 </body>
 </html>
